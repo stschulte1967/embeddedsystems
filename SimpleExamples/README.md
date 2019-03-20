@@ -1,2 +1,2 @@
-# embeddedsystems
-Playing with embedded systems like arduino, TM4C123, MAiX Bit, Raspberry Pi, etc
+# Simple Examples
+Some simple examples programmed for various embedded systems and development environments
