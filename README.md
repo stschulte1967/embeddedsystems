@@ -1,2 +1,2 @@
 # Embedded Systems
-Playing with embedded systems like arduino, TM4C123, MAiX Bit, Raspberry Pi, etc
+Playing with embedded systems using Arduino, Ti Launchpads, MAiX Bit and Raspberry Pi using different Operating Systems.
