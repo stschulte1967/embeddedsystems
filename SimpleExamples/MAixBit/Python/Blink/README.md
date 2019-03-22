@@ -5,10 +5,12 @@ The example code from https://maixpy.sipeed.com/en/get_started/led_blink.html
 
 from Maix import GPIO
 
+```
 fm.register(board_info.LED_G, fm.fpioa.GPIO0)
 
 led_r=GPIO(GPIO.GPIO0,GPIO.OUT)
 led_r.value(0)
+```
 
 Here some explanations:
 
