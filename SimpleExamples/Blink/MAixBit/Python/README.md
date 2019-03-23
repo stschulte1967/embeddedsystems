@@ -1,10 +1,35 @@
 # Sipeed MAix BiT for RISC-V AI+IoT
+Blink example, using the GPIO
 
-My starting point is: https://github.com/sipeed/MaixPy/. Ok, I downloaded kflash for windows and the binaries, 
-plugged the board in and started the program. Start flashing and Error!!!! "Unable to enter ISP mode".
+The example code from https://maixpy.sipeed.com/en/get_started/led_blink.html
 
-The alternative is to download the python program kflash.py. From the kendryte github page https://github.com/kendryte/kflash.py. 
-This did the trick.
+```
+from Maix import GPIO
 
-To connect to the device I used putty. Use the same port as for the flashing (in my case COM9 at 115200). 
-Afterwards press the reset button (the right one) and you should get a repl.
+fm.register(board_info.LED_G, fm.fpioa.GPIO0)
+
+led_r=GPIO(GPIO.GPIO0,GPIO.OUT)
+led_r.value(0)
+```
+
+Here some explanations:
+
+To use a pin you have to register it. This is done using the function fm.register.
+This creates a mapping between a functionality and a PIN.
+
+After the PIN can be configured. Here the GPIO pin is defined as output port and 
+than its values is set to 1 or 0. 0 here means the led turns on, 1 the led turns of.
+
+Before using a PIN with another functionality, it has to be unregistered.
+
+For further information see: https://maixpy.sipeed.com/en/libs/builtin_py/fm.html
+
+The values of the led are
+
+- LED_R 14
+- LED_G 13
+- LED_B 12
+
+
+
+
