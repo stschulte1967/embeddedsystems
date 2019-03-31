@@ -33,15 +33,14 @@ sudo sh -c 'echo 0 >/sys/class/leds/led0/brightness'
 Probably the best python library is gpiozero, on raspbian it can be installed with:
 
 ```
-sudo apt install python-gpiozero
+sudo apt install python3-gpiozero
 ```
-
-Unfortunately the library seems only to be available for Python 2. 
 
 To let the green led blink use the following code:
 
 ```
 from gpiozero import LED
 activity = LED(47)
+activity.blink()
 ```
 
