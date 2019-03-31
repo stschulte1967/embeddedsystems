@@ -29,3 +29,10 @@ to turn it off
 ```
 sudo sh -c 'echo 0 >/sys/class/leds/led0/brightness'
 ```
+
+Probably the best python library is gpiozero, on raspbian it can be installed with:
+
+```
+sudo apt install python-gpiozero
+```
+
