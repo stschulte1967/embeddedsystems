@@ -16,12 +16,10 @@
   by Arturo Guadalupi
   modified 8 Sep 2016
   by Colby Newman
-  unchanged 20 Mar 2019
-  by Stephan Schulte
 
   This example code is in the public domain.
 
-  http://www.arduino.cc/en/Tutorial/Blink
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
 */
 
 // the setup function runs once when you press reset or power the board
